@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-950 text-slate-50;
+}
+
+@keyframes gradient-bg {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background: linear-gradient(-45deg, #0f172a, #1e293b, #0891b2, #0f172a);
+  background-size: 400% 400%;
+  animation: gradient-bg 15s ease infinite;
+}
+
+.glass-card {
+  @apply bg-slate-900/40 backdrop-blur-xl border border-white/10 shadow-2xl;
+}

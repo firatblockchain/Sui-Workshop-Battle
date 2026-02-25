@@ -1,0 +1,10 @@
+[package]
+name = "votejoy"
+edition = "2024.beta" 
+
+[dependencies]
+
+
+[addresses]
+votejoy = "0x0"
+
