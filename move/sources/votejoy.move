@@ -35,7 +35,7 @@ const EINVALID_VOTE: u64= 1;
     // define Joy and transfer Joy
     // freeze JoyMetadata
     //#[allow(lint(self_transfer))]
-    // public fun create_joy(title: String, reward: u64, ctx: &mut TxContext) {
+    // public fun create_joy(img_url: String, name: String, ctx: &mut TxContext) {
     //     // Your code here
     // }
     // transfer::public_transfer(joy, tx_context::sender(ctx)), transfer::freeze_object(metadata)
@@ -44,7 +44,6 @@ const EINVALID_VOTE: u64= 1;
     // that takes adr, joy
     // while using it, check that the same person has not voted
     // push the address vector containing the voter into Joy
-    //#[allow(lint(self_transfer))]
-    // public fun create_joy(title: String, reward: u64, ctx: &mut TxContext) {
+    // public fun vote(adr: address, joy: Joy) {
     //     // Your code here
     // }
