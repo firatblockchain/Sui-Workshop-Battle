@@ -28,14 +28,14 @@ use sui::event;
 
 // ========= FUNCTIONS =========
 
-// TODO: Write a constructor function 'create_joy'
+// TODO: Write a constructor function 'list_joy'
     // that takes joy, ctx
     // define ListJoy and emit JoyListed
     // share ListJoy
-    // public fun create_joy(title: String, reward: u64, ctx: &mut TxContext) {
+    // public fun list_joy(joy: Joy, ctx: &mut TxContext) {
     //     // Your code here
     // }
-    // Hint : transfer::share_object(list_joy);
+    // Hint : transfer::share_object(list_joy), tx_context::epoch_timestamp_ms(ctx),tx_context::sender(ctx), object::id(&list_joy)
 
 // TODO : Write a function 'vote_listed' that takes 'list_joy: &mut ListJoy' and 'ctx: &mut TxContext'
 // use votejoy::votejoy::vote;
